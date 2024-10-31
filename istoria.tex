@@ -2,6 +2,49 @@
 %title
 %page1
 
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{geometry}
+%\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+
+%\documentclass{article}
+%\usepackage{iftex}
+%\iftutex
+%% For LuaTeX or XeTeX Use Google's 
+%% OpenType Noto fonts for typesetting
+%% Russian text
+%\usepackage{fontspec}
+%\defaultfontfeatures{Ligatures={TeX}}
+%%\setmainfont{Noto Serif}
+%%\setsansfont{Noto Sans}
+%%\setmonofont{Noto Sans Mono}
+%\else
+%% For pdfTeX we must use old
+%% 8-bit font technologies
+%\usepackage[T2A]{fontenc}
+%\fi
+%Hyphenation rules
+%\usepackage{hyphenat}
+%\hyphenation{ма-те-ма-ти-ка вос-ста-нав-ли-вать}
+\usepackage[english, russian]{babel}
+\usepackage{csquotes}
+\usepackage{xfrac}
+
+%\babelprovide[import]{thai}
+\babelfont{rm}{FreeSerif}
+\babelfont{sf}{FreeSans}
+\babelfont{tt}{FreeMono}
+
+\begin{document}
+\Large
+
 П. В. Каменский
 
 История Одного Дня
@@ -480,7 +523,7 @@
 Иван Павлович (начальник инвалидной команды, капитан Лисенко) поехал в дрожках?
 А вот за ним четыре солдата бегут рысцой, ружья держат под шинелью, чтобы дождик не замочил. А среди-то всех во как
 ковыляет ногами старый солдат цирюльник: ему то сердечному, старому и хилому, не легко поспевать за строевыми!
-\begin{quote}
+\end{quote}
 
 Так в мыслях купца -ова отразилось виденное
 им на улице и он осталея сидеть спокойно на своем
@@ -1797,3 +1840,6 @@
 с пафосом объявил: \emph{``прикажи Ильяшенко стрелять, всех бы перестрелял,
 прикажи колоть, всех переколол бы''.} Хорошо, что дело ограничилось лишь
 бритьем головы.
+
+	
+\end{document}
