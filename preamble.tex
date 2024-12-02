@@ -1,0 +1,60 @@
+
+\usepackage{geometry}
+%\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+
+%\documentclass{article}
+%\usepackage{iftex}
+%\iftutex
+%% For LuaTeX or XeTeX Use Google's 
+%% OpenType Noto fonts for typesetting
+%% Russian text
+%\usepackage{fontspec}
+%\defaultfontfeatures{Ligatures={TeX}}
+%%\setmainfont{Noto Serif}
+%%\setsansfont{Noto Sans}
+%%\setmonofont{Noto Sans Mono}
+%\else
+%% For pdfTeX we must use old
+%% 8-bit font technologies
+%\usepackage[T2A]{fontenc}
+%\fi
+%Hyphenation rules
+%\usepackage{hyphenat}
+%\hyphenation{ма-те-ма-ти-ка вос-ста-нав-ли-вать}
+\usepackage[english, russian, ukrainian]{babel}
+\usepackage{csquotes}
+\usepackage{xfrac}
+
+\usepackage{fontspec}
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+
+\usepackage{polyglossia}
+\usepackage{hyperref}
+
+%\setdefaultlanguage{russian}
+\setdefaultlanguage{ukrainian}
+
+%\setotherlanguages{ukrainian}
+\setotherlanguages{russian}
+
+%\babelprovide[import]{thai}
+\babelfont{rm}{FreeSerif}
+\babelfont{sf}{FreeSans}
+\babelfont{tt}{FreeMono}
+
+\newif\ifrus
+\newif\ifukr
+\newif\ifpages
+
+\ukrtrue
+\pagestrue
+
